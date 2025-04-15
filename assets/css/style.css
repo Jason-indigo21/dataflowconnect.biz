@@ -752,9 +752,9 @@ input {
 }
 
 .btn-theme:hover {
-  background-color: #060816 !important;
+  background-color: #18094d !important;
   color: #ffffff !important;
-  border: 2px solid #060816 !important;
+  border: 2px solid #18094d !important;
 }
 
 .shadow .btn-theme:hover {
@@ -3685,7 +3685,7 @@ body,
 .services-details-items .services-single-content h2 {
   font-weight: 600;
   margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .services-details-area .features .col-lg-6 {
@@ -8547,4 +8547,27 @@ margin-top: 50px;
     margin-top: 0;
 }
 
+}
+
+.solution-sector li{ 
+  list-style: disc;
+}
+
+.digital-image{
+  height: 300px;
+}
+
+.text-primary{
+  color:#104cba !important;
+}
+
+.btn-discover {
+  width: 38rem;
+  height: auto;
+}
+
+.discover-contact{
+  border-top: 1px dashed #dddddd;
+  margin-top: 25px;
+    padding-top: 25px;
 }

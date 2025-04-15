@@ -38,6 +38,7 @@
 
 </head>
 <?php include("./includes/services-content.php"); ?>
+
 <body>
 
 
@@ -64,66 +65,57 @@
 
     <!-- Header 
     ============================================= -->
+
+    <?php 
+        $isLang = !isset($_REQUEST['lang']) || $_REQUEST['lang']!='en';
+    ?>
     <header id="home">
 
         <!-- Start Navigation -->
-        <nav class="navbar navbar-default attr-bg navbar-fixed dark no-background bootsnav">
-
-            <!-- Start Top Search -->
-            <div class="container">
-                <div class="row">
-                    <div class="top-search">
-                        <div class="input-group">
-                            <form action="#">
-                                <input type="text" name="text" class="form-control" placeholder="Search">
-                                <button type="submit">
-                                    <i class="ti-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Top Search -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
 
             <div class="container ">
-
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="?pag=home" style="width:300px;">
+                    <a class="navbar-brand" href="?page=home" style="width:300px;">
                         <img src="assets/images/logo.png" class="logo w-75" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse " id="navbar-menu">
+                <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left mt-3" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
-                            <a href="?page=home" class=" active">Home</a>
+                            <a href="?page=home" class=" active"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang']!='en' ? 'INICIO' : 'Home' ?> </a>
                         </li>
                         <li class="dropdown">
-                            <a href="?page=our-proposal" class="dropdown-toggle" data-toggle="dropdown">OUR PROPOSAL</a>
+                            <a href="?page=our-proposal" class="dropdown-toggle" data-toggle="dropdown"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'NUESTRA PROPUESTA' : 'OUR PROPOSAL' ?></a>
+                            <ul class="dropdown-menu">
+                             <?php foreach ($services as $service): ?>
+                                    <li><a href="?page=our-proposal&service=<?= $service['link'] ?>"><?= $service['title'] ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
                         </li>
                         <li class="">
-                            <a href="?page=solutions-by-sector" class="">SOLUTIONS BY SECTOR</a>
+                            <a href="?page=solutions-by-sector" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'SOLUCIONES POR SECTOR' : 'SOLUTIONS BY SECTOR' ?></a>
                         </li>
                         <li class="">
-                            <a href="?page=digital-infrastructure" class="">DIGITAL INFRASTRUCTURE</a>
+                            <a href="?page=digital-infrastructure" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'INFRAESTRUCTURA DIGITAL' : 'DIGITAL INFRASTRUCTURE' ?></a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-left mt-3" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
-                            <a href="?page=discover-more" class="">DISCOVER MORE</a>
+                            <a href="?page=discover-more" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'DESCUBRA MAS' : 'DISCOVER MORE' ?></a>
                         </li>
                         <li class="">
-                            <a href="?page=frequesntly-asked-question" class="">FREQUENTLY ASKED QUESTIONS</a>
+                            <a href="?page=frequesntly-asked-question" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'PREGUNTAS FRECUENTES' : 'FREQUENTLY ASKED QUESTIONS' ?></a>
                         </li>
                         <li>
-                            <a href="?page=contact-us">CONTACT US</a>
+                            <a href="?page=contact-us"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang']!='en' ? 'CONTACTENOS' : 'CONTACT US' ?></a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -134,8 +126,21 @@
 
     </header>
 
+    <?php if ($_REQUEST['page'] != 'home'): ?>
 
+        <div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(assets/img/banner/12.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Services Single</h2>
+                        <ul class="breadcrumb">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li class="active">Single</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-    
+    <?php endif; ?>
