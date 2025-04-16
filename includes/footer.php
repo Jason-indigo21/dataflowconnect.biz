@@ -24,7 +24,7 @@
                                 <div class="heading">
                                     <h4> <?php echo $isLang ? "¡ÚNETE A NUESTRO EQUIPO!" : "JOIN OUR TEAM!" ?> </h4>
                                 </div>
-                                <form action="mail-join-up.php" method="POST">
+                                <form action="mail-join-up.php" method="POST" enctype="multipart/form-data" >
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
@@ -37,10 +37,10 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <label for="csv" class="custom-label"><?php echo $isLang ? "Subir archivo CSV" : "Upload CSV" ?> </label>
+                                            <label for="cv" class="custom-label"><?php echo $isLang ? "Subir archivo CV" : "Upload CV" ?> </label>
                                             <span class="file-name" id="fileName"><?php echo $isLang ? "Ningún archivo elegido" : "No file chosen" ?> </span>
                                             <div class="form-group">
-                                                <input type="file" name="csv" class="custom-file-input" placeholder="CSV" id="csv">
+                                                <input type="file" id="cv"  name="cv" class="custom-file-input" >
 
                                             </div>
                                         </div>
@@ -322,7 +322,7 @@ if ($_REQUEST['email-sent'] == 'success')
 <script src="assets/js/chat.js"></script>
 
 <script>
-    const fileInput = document.getElementById('csv');
+    const fileInput = document.getElementById('cv');
     const fileNameDisplay = document.getElementById('fileName');
 
     fileInput.addEventListener('change', function() {

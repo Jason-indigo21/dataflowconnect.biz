@@ -1,11 +1,21 @@
   $(function () {
     // let msgOpening ="Hi there!</br> How can i help you today?";
-    let msgOpening ="Hello! Welcome to <b>DATAFLOW CONNECT, S.A.,</b> your partner in intelligent solutions for Call Centers. How can we help you today? <ul style='list-style:disc;margin-left:25px;'><li>Schedule a free consultation</li><li>Learn about our services</li><li>Talk to an advisor</li></ul>";
+    const urlParams = new URLSearchParams(window.location.search);
+    let msgOpening ="";
+    let msgAgent="";
+    if (urlParams.get('lang') === 'en') {
+        msgOpening ="Hello! Welcome to <b>DATAFLOW CONNECT, S.A.,</b> your partner in intelligent solutions for Call Centers. How can we help you today? <ul style='list-style:disc;margin-left:25px;'><li>Schedule a free consultation</li><li>Learn about our services</li><li>Talk to an advisor</li></ul>";
+        msgAgent="One of our agents will be with you soon. </br>All our agents are currently busy. Please try again later. </br> You can also reach us via email. <a href='?page=contact-us'class='text-primary'> <b> supportdesk@dataflowconnect.biz</strong></a>  ";
+    }else {
+        msgOpening ="¡Hola! Bienvenido a <b>DATAFLOW CONNECT, S.A.,</b> su aliado en soluciones inteligentes para Call Centers . ¿En qué podemos ayudarle hoy? <ul style='list-style:disc;margin-left:25px;'><li>Agendar una asesoría gratuita</li><li>Conocer nuestros servicios</li><li>Hablar con un asesor</li></ul>";
+        msgAgent="Uno de nuestros agentes se pondrá en contacto con usted en breve.Todos nuestros agentes están ocupados. Vuelva a intentarlo más tarde.También puede contactarnos por correo electrónico. <a href='?page=contact-us'class='text-primary'> <b> supportdesk@dataflowconnect.biz</strong></a> "
+    }
+    
     generate_message_bot(msgOpening, 'user');
 
         var INDEX = 0;
         $("#chat-submit").click(function (e) { 
-            let msgAgent="One of our agents will be with you soon. </br>All our agents are currently busy. Please try again later. </br> You can also reach us via email. <a href='?page=contact-us'class='text-primary'> <b> supportdesk@dataflowconnect.biz</strong></a>  ";
+            
            
 
             e.preventDefault();
