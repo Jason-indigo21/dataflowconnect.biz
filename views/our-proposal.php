@@ -9,7 +9,7 @@
                         <div class="content">
                             <ul>
                                 <?php foreach ($services as $service): ?>
-                                    <li class="<?= $_REQUEST['service']== $service['link'] ? 'current-item' : '' ?>"><a href="?page=our-proposal&service=<?= $service['link'] ?>"><?= $service['title'] ?></a></li>
+                                    <li class="<?= $_REQUEST['service']== $service['link'] ? 'current-item' : '' ?>"><a href="?page=our-proposal&service=<?= $service['link'] ?><?php echo($_REQUEST['lang']=='es') ?'&lang=es' :'&lang=en'?>"><?= $service['title'] ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
@@ -20,7 +20,7 @@
                     foreach ($services as $service):
                         if ($_REQUEST['service'] == $service['link']):
                     ?>
-                            <img src="assets/img/banner/6.jpg" alt="Thumb">
+                            <img src="<?= $service['image'] ?>" alt="Thumb">
                             <h2><?= $service['title'] ?></h2>
                             <h4><?= $service['sub-content'] ?></h4>
 
@@ -28,7 +28,7 @@
                             <div class="services-style-eight">
                                 <div class="content-ender">
                                     <?= $service['content-ender'] ?>
-                                   <p> <a class="btn circle btn-theme effect btn-md my-4" href="./?page=contact-us"><?= $service['content-ender-button'] ?></a></p>
+                                   <p> <a class="btn circle btn-theme effect btn-md my-4" href="./?page=contact-us<?php echo($_REQUEST['lang']=='es') ?'&lang=es' :'&lang=en'?>"><?= $service['content-ender-button'] ?></a></p>
                                 </div>
                             </div>
                     <?php endif;

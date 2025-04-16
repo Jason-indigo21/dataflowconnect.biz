@@ -132,66 +132,7 @@
     </div>
     <!-- End Google Maps -->
 
-    <script>
-    $(document).ready(function () {
-        generate();
-    })
-
-
-    let captcha;
-    function generate() {
-
-        // Clear old input
-        document.getElementById("submit").value = "";
-
-        // Access the element to store
-        // the generated captcha
-        // captcha = document.getElementById("captcha");
-        captchaInput = document.getElementById("captchandler");
-        let uniquechar = "";
-
-        const randomchar =
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-        // Generate captcha for length of
-        // 5 with random character
-        for (let i = 1; i < 7; i++) {
-            uniquechar += randomchar.charAt(
-                Math.random() * randomchar.length)
-        }
-        console.log(uniquechar)
-        // Store generated input
-        // captcha.innerHTML = uniquechar;
-        captchaInput.value = uniquechar;
-
-    }
-
-    function printmsg() {
-        const usr_input = document
-            .getElementById("submit").value;
-
-        // Check whether the input is equal
-        // to generated captcha or not
-        if (usr_input == captchaInput.value) {
-            let s = document.getElementById("key").innerHTML = "Matched";
-            console.log(s);
-
-            $('.submit-button').prop('disabled', false);
-            document.getElementById("captcha_mail").value = captchaInput.value;
-            document.getElementById("btnCheck").disabled = true;
-            generate();
-        }
-        else {
-            let s = document.getElementById("key")
-                .innerHTML = "Not Matched";
-            generate();
-        }
-    }
-
-
-
-</script>
-
+    
 <?php
 
 if ($_REQUEST['email-sent']=='success')

@@ -3438,6 +3438,7 @@ body,
     padding: 60px 30px;
     background: #ffffff;
     border: 2px solid #e7e7e7;
+    height:480px;
 }
 
 .default-services-area .single-item {
@@ -5261,6 +5262,7 @@ body,
   background: #ffffff;
   position: relative;
   overflow: hidden;
+  height: 300px;
 }
 
 .testimonials-area .testimonials-carousel .item .bottom {
@@ -8570,4 +8572,83 @@ margin-top: 50px;
   border-top: 1px dashed #dddddd;
   margin-top: 25px;
     padding-top: 25px;
+}
+
+.btn-digital{
+  width: 28rem;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgb(15 80 197) 0%, rgba(0, 89, 252, 1) 56%);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.file-name {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-title {
+  color: ;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+
+.modal-bottom-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.modal-bottom-center .modal-content {
+  margin: 0 15px 20px;
+  width: 800px !important;
+  height: 450px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+      width: 800px;
+  }
+}
+
+/* .modal-dialog {
+  width: 800px;
+} */
+.modal-content {
+  /* background-color: #002359; */
+  background-image: url("../img/shape/16.png");
+  background-size: cover;
+  height: 450px;
+
+}
+
+.modal-body {
+  color: #fff;
+  /* margin: 80px; */
+  /* padding: 40px; */
+  border-radius: 5px;
+  /* background-color: rgba(7, 166, 152, 0.9); */
+}
+
+.modal-body::before {
+  opacity: 0.8;
+}
+
+.flag-header{
+  height: 40px;
+  width: 60px;
 }

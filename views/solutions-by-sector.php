@@ -26,7 +26,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-shopping-cart"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Comercio Electrónico: Conecta, Vende, Crece" : "E-commerce: connect, sell, grow" ?> </h4>
@@ -55,7 +55,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-hand-holding-heart"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Salud y Bienestar: Cuidamos de Quienes Cuidan a los Demás" : "Health & Wellness: We Care for Those Who Care for Others" ?> </h4>
@@ -83,7 +83,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-robot"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Tecnología: Soporte Inteligente para Empresas que Transforman el Mundo" : "Technology: Intelligent Support for World-Transforming Enterprises" ?> </h4>
@@ -112,7 +112,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Educación y Formación: Comunicación Clara para un Aprendizaje sin Barreras" : "Education and Training: Clear Communication for Barrier-Free Learning" ?> </h4>
@@ -141,7 +141,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-piggy-bank"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Sector Financiero y Bancario: Confianza y Precisión en Cada Interacción" : "Financial and Banking Sector: Trust and Precision in Every Interaction" ?> </h4>
@@ -167,7 +167,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="fas fa-lightbulb"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Energía y Servicios Públicos: Eficiencia al Servicio del Progreso" : "Energy and Utilities: Efficiency at the Service of Progress" ?> </h4>
@@ -194,27 +194,27 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                            <i class="fas fa-users-cog"></i>
                             </div>
                             <div class="info">
-                                <h4><?php echo $isLang ? "Servicios Profesionales: Comunicación que Inspira Confianza":"Professional Services: Communication That Inspires Trust" ?> </h4>
-                                <p><?php echo $isLang 
-                                ? "Los profesionales de sectores como consultoría, asesoría legal o contabilidad requieren una comunicación clara y eficiente. En <b>DATAFLOW CONNECT, S.A.,</b> optimizamos la gestión de interacciones para ofrecer un servicio profesional de alto nivel."
-                                :"Consulting, legal advice, or accounting professionals require clear and efficient communication. At <b>DATAFLOW CONNECT, S.A.,</b> we optimize interaction management to offer a high-level professional service." ?> 
-                                
+                                <h4><?php echo $isLang ? "Servicios Profesionales: Comunicación que Inspira Confianza" : "Professional Services: Communication That Inspires Trust" ?> </h4>
+                                <p><?php echo $isLang
+                                        ? "Los profesionales de sectores como consultoría, asesoría legal o contabilidad requieren una comunicación clara y eficiente. En <b>DATAFLOW CONNECT, S.A.,</b> optimizamos la gestión de interacciones para ofrecer un servicio profesional de alto nivel."
+                                        : "Consulting, legal advice, or accounting professionals require clear and efficient communication. At <b>DATAFLOW CONNECT, S.A.,</b> we optimize interaction management to offer a high-level professional service." ?>
+
                                 </p>
                                 <ul class="ml-5 mt-2 solution-sector">
                                     <li>
-                                        <p><?php echo $isLang ? "Implementamos sistemas de atención que gestionan citas, consultas y seguimiento de casos.":"We implement care systems that manage appointments, consultations, and case follow-up." ?> </p>
+                                        <p><?php echo $isLang ? "Implementamos sistemas de atención que gestionan citas, consultas y seguimiento de casos." : "We implement care systems that manage appointments, consultations, and case follow-up." ?> </p>
                                     </li>
                                     <li>
-                                        <p><?php echo $isLang ? "Ofrecemos soporte para una comunicación fluida y segura con los clientes.":"We offer support for smooth and secure communication with customers." ?> </p>
+                                        <p><?php echo $isLang ? "Ofrecemos soporte para una comunicación fluida y segura con los clientes." : "We offer support for smooth and secure communication with customers." ?> </p>
                                     </li>
                                     <li>
-                                        <p><?php echo $isLang ? "Utilizamos herramientas analíticas para evaluar el desempeño del servicio y proponer mejoras continuas.":"We use analytical tools to evaluate service performance and propose continuous improvements." ?> </p>
+                                        <p><?php echo $isLang ? "Utilizamos herramientas analíticas para evaluar el desempeño del servicio y proponer mejoras continuas." : "We use analytical tools to evaluate service performance and propose continuous improvements." ?> </p>
                                     </li>
                                 </ul>
-                                <h5 class="pt-5"><b><?php echo $isLang ? "Porque la confianza es el activo más valioso.":"Because trust is the most valuable asset." ?> </b></h5>
+                                <h5 class="pt-5"><b><?php echo $isLang ? "Porque la confianza es el activo más valioso." : "Because trust is the most valuable asset." ?> </b></h5>
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                            <i class="fas fa-rocket"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? "Startups: Agility and Scalability to Drive Bright Ideas" : "Startups: Agility and Scalability to Drive Bright Ideas" ?> </h4>
@@ -250,7 +250,7 @@
                     <div class="single-item">
                         <div class="item">
                             <div class="icon">
-                                <i class="flaticon-growth"></i>
+                            <i class="fas fa-chart-line"></i>
                             </div>
                             <div class="info">
                                 <h4><?php echo $isLang ? " Marketing: Conexiones Estratégicas que Impactan" : "Marketing: Strategic Connections That Impact" ?> </h4>

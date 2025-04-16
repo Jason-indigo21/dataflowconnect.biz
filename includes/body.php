@@ -22,6 +22,12 @@ switch ($_REQUEST['page']) {
 	case 'contact-us':
 		include('views/contact-us.php');
 		break;
+	case 'privacy-policy':
+		include('views/privacy-policy.php');
+		break;
+	case 'cookie-privacy':
+		include('views/cookies-policy.php');
+		break;
 	default:
 		include('views/home.php');
 		break;

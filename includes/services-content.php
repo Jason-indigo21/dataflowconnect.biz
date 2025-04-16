@@ -3,6 +3,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
     $services = [
         [
             "title" => "Atención al Cliente",
+            "image" => "assets/images/service-1.jpg",
+            "icon"  => "<i class='fas fa-handshake'></i>",
             "home-content" => "Ofrecemos un servicio de <b>Atención al Cliente personalizado y eficiente</b>, diseñado para potenciar la satisfacción, confianza y lealtad de sus clientes. Sabemos que una experiencia de servicio positiva no solo resuelve problemas, sino que crea conexiones duraderas que impulsan el crecimiento de su negocio.",        
             "link" => "customer-service",
             "sub-content" => "Construya relaciones duraderas",
@@ -28,6 +30,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Servicios de Telemarketing",
+            "image" => "assets/images/service-2.jpg",
+            "icon"  => "<i class='fas fa-phone'></i>",
             "home-content" => "Aumente <b>sus ventas y fortalezca la relación con sus clientes</b> a través de estrategias de telemarketing diseñadas para captar nuevos prospectos y fidelizar a los actuales. Nuestro enfoque combina comunicación efectiva, herramientas tecnológicas avanzadas y un equipo especializado en conectar con su audiencia de manera auténtica",
             "link" => "telemarketing-services",
             "sub-content" => "Impulse sus ventas y conecte con su audiencia",
@@ -52,6 +56,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Gestión de Relaciones con los Clientes",
+            "image" => "assets/images/service-3.jpg",
+            "icon"  => "<i class='far fa-chart-bar'></i>",
             "home-content" => "Transforme la relación con sus clientes a través de la <b>implementación de herramientas avanzadas de CRM</b>. Nuestro objetivo es que cada interacción cuente, brindando experiencias personalizadas que fortalezcan el vínculo con su audiencia y optimicen sus procesos internos.",
             "link" => "customer-relationship-management",
             "sub-content" => "Conecte, Personalice y Fidelice",
@@ -75,6 +81,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Optimización para Motores de Búsqueda",
+            "image" => "assets/images/service-4.jpg",
+            "icon"  => "<i class='fas fa-search'></i>",
             "home-content" => "<b>Aumente su visibilidad online y atraiga tráfico de calidad</b> a través de estrategias SEO avanzadas. Sabemos que aparecer en las primeras posiciones de Google no es cuestión de suerte, sino de una optimización inteligente que conecta su negocio con las personas adecuadas en el momento perfecto.",
             "link" => "search-engine-optimization",
             "sub-content" => "Go Farther, Go Better",
@@ -98,6 +106,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Consultoría de Call Center",
+            "image" => "assets/images/service-5.jpg",
+            "icon"  => "<i class='fas fa-headset'></i>",
             "home-content" => "Optimice <b>el rendimiento de su call center</b>, impulsando la eficiencia operativa, la satisfacción del cliente y la rentabilidad del negocio. Nuestro enfoque estratégico le permite adaptarse a las demandas del mercado, reducir costos y ofrecer una atención de calidad que fideliza a sus clientes.",
             "link" => "call-center-consulting",
             "sub-content" => "Consultoría de Call Center",
@@ -121,6 +131,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Marketing Digital",
+            "image" => "assets/images/service-6.jpg",
+            "icon"  => "<i class='fas fa-rocket'></i>",
             "home-content" => "Diseñamos estrategias de <b>Marketing Digital personalizadas</b> para que su marca llegue más lejos, conecte con el público adecuado y logre resultados medibles. Nuestro enfoque combina creatividad, datos y tecnología para impulsar el crecimiento y la relevancia de su negocio en el entorno digital.",
             "link" => "digital-marketing",
             "sub-content" => "",
@@ -144,6 +156,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Soporte de Back Office",
+            "image" => "assets/images/service-7.jpg",
+            "icon"  => "<i class='fas fa-cogs'></i>",
             "home-content" => "Optimice sus procesos internos, reduzca la carga operativa y concéntrese en lo que realmente importa: el crecimiento y la estrategia. Nos encargamos de las tareas administrativas para que su equipo pueda enfocarse en impulsar resultados.",
             "link" => "back-office-support",
             "sub-content" => "Administrative efficiency for a business focused on growth",
@@ -167,6 +181,8 @@ if(!isset($_REQUEST['lang']) || $_REQUEST['lang']!='en'){
         ],
         [
             "title" => "Análisis de Datos",
+            "image" => "assets/images/service-8.jpg",
+            "icon"  => "<i class='fas fa-chart-pie'></i>",
             "home-content" => "Transforme datos en decisiones inteligentes. Nuestro servicio de Análisis de Datos permite a su empresa comprender mejor su realidad, anticipar tendencias y descubrir oportunidades clave para crecer de manera estratégica.",
             "link" => "data-analysis",
             "sub-content" => "Convierta información en estrategias ganadoras",
@@ -194,6 +210,8 @@ else{
     $services = [
         [
             "title" => "Customer Service",
+            "image" => "assets/images/service-1.jpg",
+            "icon"  => "<i class='fas fa-handshake'></i>",
             "home-content" => "We offer <b>personalized and efficient Customer Service</b> to enhance customer satisfaction, trust, and loyalty. A positive service experience solves problems and creates lasting connections that drive business growth.",        
             "link" => "customer-service",
             "sub-content" => "Build long-lasting relationships",
@@ -219,6 +237,8 @@ else{
         ],
         [
             "title" => "Telemarketing Services",
+            "image" => "assets/images/service-2.jpg",
+            "icon"  => "<i class='fas fa-phone'></i>",
             "home-content" => "Increase your <b>sales and strengthen your customer relationship</b> through telemarketing strategies to capture new prospects and retain current ones. Our approach combines effective communication, advanced technological tools, and a team that authentically connects with your audience.",
             "link" => "telemarketing-services",
             "sub-content" => "Boost your sales and connect with your audience",
@@ -243,6 +263,8 @@ else{
         ],
         [
             "title" => "Customer Relationship Management",
+            "image" => "assets/images/service-3.jpg",
+            "icon"  => "<i class='far fa-chart-bar'></i>",
             "home-content" => "Transform your customer relationship through the <b>implementation of advanced CRM tools</b>. We aim to make every interaction count, providing personalized experiences that strengthen the bond with your audience and optimize your internal processes.",
             "link" => "customer-relationship-management",
             "sub-content" => "Connect, Personalize, and Engage",
@@ -266,6 +288,8 @@ else{
         ],
         [
             "title" => "Search Engine Optimization",
+            "image" => "assets/images/service-4.jpg",
+            "icon"  => "<i class='fas fa-search'></i>",
             "home-content" => "<b>Increase your online visibility and attract quality traffic</b> through advanced SEO strategies. We know that appearing at the top of Google is not a matter of luck but of intelligent optimization that connects your business with the right people at the perfect time.",
             "link" => "search-engine-optimization",
             "sub-content" => "Go Farther, Go Better",
@@ -289,6 +313,8 @@ else{
         ],
         [
             "title" => "Call Center Consulting",
+            "image" => "assets/images/service-5.jpg",
+            "icon"  => "<i class='fas fa-headset'></i>",
             "home-content" => "Optimize <b>your call center performance</b>, boosting operational efficiency, customer satisfaction, and business profitability. Our strategic approach allows you to adapt to market demands, reduce costs, and offer quality service that builds customer loyalty.",
             "link" => "call-center-consulting",
             "sub-content" => " Consulting Smart Strategies for Exceptional Service",
@@ -312,6 +338,8 @@ else{
         ],
         [
             "title" => "Digital Marketing",
+            "image" => "assets/images/service-6.jpg",
+            "icon"  => "<i class='fas fa-rocket'></i>",
             "home-content" => "We design <b>personalized Digital Marketing</b> strategies so your brand reaches further, connects with the right audience, and achieves measurable results. Our approach combines creativity, data, and technology to drive your business's growth and relevance in the digital environment.",
             "link" => "digital-marketing",
             "sub-content" => "",
@@ -335,6 +363,8 @@ else{
         ],
         [
             "title" => "Back Office Support",
+            "image" => "assets/images/service-7.jpg",
+            "icon"  => "<i class='fas fa-cogs'></i>",
             "home-content" => "Optimize your internal processes, reduce operational burden, and focus on what matters: growth and strategy. We take care of the administrative tasks, so your team can focus on driving results.",
             "link" => "back-office-support",
             "sub-content" => "Administrative efficiency for a business focused on growth",
@@ -358,6 +388,8 @@ else{
         ],
         [
             "title" => "Data Analysis",
+            "image" => "assets/images/service-8.jpg",
+            "icon"  => "<i class='fas fa-chart-pie'></i>",
             "home-content" => "Transform data into intelligent decisions. Our <b>Data Analytics</b> service lets your company understand its reality better, anticipate trends, and discover key strategic growth opportunities.",
             "link" => "data-analysis",
             "sub-content" => "Turn insights into winning strategies",
