@@ -79,10 +79,10 @@ if ($result) {
   curl_exec($cSession);
   curl_close($cSession);
 
-  header("Location: ./?page=como-aplicar&email-sent=success");
+  header("Location: ./?page=contact-us&email-sent=success");
 
 } else {
-  header("Location: ./?page=como-aplicar&email-sent=failed");
+  header("Location: ./?page=contact-us&email-sent=failed");
   //   echo "Error: " . curl_error($cSession) . " ";
 }
 
