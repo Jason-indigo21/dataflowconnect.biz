@@ -5,7 +5,7 @@
                 <div class="col-lg-4 services-sidebar order-last order-lg-first">
                     <!-- Single Widget -->
                     <div class="single-widget services-list">
-                        <h4 class="widget-title">Services</h4>
+                        <h4 class="widget-title"><?php echo $isLang ? "Servicios":"Services" ?> </h4>
                         <div class="content">
                             <ul>
                                 <?php foreach ($services as $service): ?>

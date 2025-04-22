@@ -209,7 +209,7 @@
         </div>
     </div>
 
-    <div class="testimonials-area carousel-shadow default-padding-bottom">
+    <div class="testimonials-area carousel-shadow default-padding-bottom mt-3">
         <div class="container">
             <div class="heading-left">
                 <div class="row">
@@ -229,12 +229,11 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="info">
-                                <b> "<?php echo $isLang ? "Un cambio total en nuestra atención al cliente" : "A total change in our customer service" ?> " </b>
+                                <b> "<?php echo $isLang ? "Un cambio total en nuestra atención al cliente" : "A total change in our customer service"?>" </b>
                                 <p>
-                                    " <?php echo $isLang
+                                    "<?php echo $isLang
                                             ? "Desde que implementamos las estrategias de esta consultora, nuestros tiempos de respuesta se redujeron en un 40% y la satisfacción de nuestros clientes aumentó notablemente. Su enfoque en la optimización y el CRM nos permitió mejorar cada interacción."
-                                            : "Since we implemented the strategies of this consulting firm, our response times have been reduced by 40%, and our clients' satisfaction has increased significantly. Their focus on optimization and CRM allowed us to improve every interaction." ?>
-                                    "
+                                            : "Since we implemented the strategies of this consulting firm, our response times have been reduced by 40%, and our clients' satisfaction has increased significantly. Their focus on optimization and CRM allowed us to improve every interaction." ?>"
                                 </p>
                                 <div class="bottom">
                                     <div class="provider">
@@ -255,12 +254,10 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="info">
-                                <b>"<?php echo $isLang ? "Resultados tangibles en ventas y fidelización" : "Tangible results in sales and loyalty" ?> "</b>
-                                <p>"
-                                    <?php echo $isLang
+                                <b>"<?php echo $isLang ? "Resultados tangibles en ventas y fidelización" : "Tangible results in sales and loyalty"?>"</b>
+                                <p>"<?php echo $isLang
                                         ? "Buscábamos mejorar nuestras campañas de telemarketing, y el equipo de esta consultora nos ayudó a desarrollar una estrategia basada en datos que incrementó nuestras conversiones en un 30%. Son verdaderos expertos en el área."
-                                        : " We were looking to improve our telemarketing campaigns, and the team at this consultancy helped us develop a data-driven strategy that increased our conversions by 30%. They are true experts in the area." ?>
-                                    "
+                                        : "We were looking to improve our telemarketing campaigns, and the team at this consultancy helped us develop a data-driven strategy that increased our conversions by 30%. They are true experts in the area." ?>"
                                 </p>
                                 <div class="bottom">
                                     <div class="provider">
@@ -281,12 +278,10 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="info">
-                                <b>"<?php echo $isLang ? "Eficiencia operativa como nunca antes" : "Operational efficiency like never before" ?> "</b>
-                                <p>"
-                                    <?php echo $isLang
+                                <b>"<?php echo $isLang ? "Eficiencia operativa como nunca antes" : "Operational efficiency like never before" ?>"</b>
+                                <p>"<?php echo $isLang
                                         ? "Gracias a su asesoría, optimizamos nuestros procesos de back office y reducimos costos sin afectar la calidad del servicio. Ahora, nuestra operación es más ágil y nuestros clientes lo notan."
-                                        : "Thanks to their advice, we optimized our back-office processes and reduced costs without affecting the quality of service. Our operation is more agile, and our customers notice it." ?>
-                                    "
+                                        : "Thanks to their advice, we optimized our back-office processes and reduced costs without affecting the quality of service. Our operation is more agile, and our customers notice it." ?>"
                                 </p>
                                 <div class="bottom">
                                     <div class="provider">

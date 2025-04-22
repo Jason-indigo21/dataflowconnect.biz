@@ -4,7 +4,7 @@
         <div class="container">
             <div class="contact-box">
                 <div class="row align-center">
-                    <div class="col-lg-5 left-info">
+                    <div class="col-lg-4 left-info">
                         <div class="item">
                             <div class="icon">
                                 <i class="fas fa-map-marked-alt"></i>
@@ -12,18 +12,18 @@
                             <div class="info">
                                 <h5><?php echo $isLang ? "Dirección" : "Address" ?></h5>
                                 <?php echo $isLang ?
-                                "<p>PH Torres de las Americas<br>
+                                    "<p>PH Torres de las Americas<br>
                                 Piso 2, Torre A<br>
                                 Punta Pacifica, San Francisco, Panama
                                 </p>" :
 
-                                "<p>PH Torres de las Americas<br>
+                                    "<p>PH Torres de las Americas<br>
                                 Floor 2, Tower A<br>
                                 Punta Pacifica, San Francisco, Panama</p>"
-                                 ?>
+                                ?>
                             </div>
                         </div>
-                       
+
                         <div class="item">
                             <div class="icon">
                                 <i class="fas fa-envelope-open"></i>
@@ -31,16 +31,16 @@
                             <div class="info">
                                 <h5><?php echo $isLang ? "Correo Electrónico" : "Email" ?></h5>
                                 <p>
-                                 supportdesk@dataflowconnect.biz
+                                    supportdesk@dataflowconnect.biz
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 offset-lg-1">
+                    <div class="col-lg-7 offset-lg-1">
                         <div class="content">
                             <div class="heading">
                                 <h2><?php echo $isLang ? "¡Hablemos! Estamos Aquí para Conectar Con Usted " : "Talk! We're Here to Connect With You " ?></h2>
-                                
+
                             </div>
                             <form action="mail.php" method="POST" class="contactForm">
                                 <div class="row">
@@ -81,20 +81,19 @@
                                                         placeholder="Captcha code" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-1 ">
-                                                <div onclick="generate()">
+                                            <div class="col-md-1 pt-2 pl-3">
+                                                <div onclick="generate()" style="cursor:pointer;">
                                                     <i class="fas fa-sync"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control"
-                                                        style="text-decoration:line-through;text-align:center; font-style: italic; padding-top:6px;"
+                                                        style="text-decoration:line-through;text-align:center; font-style: italic;"
                                                         id="captchandler" disabled>
-
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <button type="button" id="btnCheck" class="btn btn-primary"
                                                     onclick="printmsg()">
                                                     Check</button>
@@ -106,7 +105,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <button type="submit" name="submit" class="submit-button" id="submit" disabled>
-                                        <?php echo $isLang ? 'Enviar Mensaje' : 'Send Message' ?>
+                                            <?php echo $isLang ? 'Enviar Mensaje' : 'Send Message' ?>
                                         </button>
                                     </div>
                                 </div>
@@ -132,16 +131,18 @@
     </div>
     <!-- End Google Maps -->
 
-    
-<?php
 
-if ($_REQUEST['email-sent']=='success')
- 
-    echo '<script>
+    <?php
+
+    if ($_REQUEST['email-sent'] == 'success')
+
+        echo '<script>
              Swal.fire({
         icon: "success",
         title: "Message sent",
         showConfirmButton: false,
         timer: 1500    })
       </script>';
-?>
+    ?>
+
+    

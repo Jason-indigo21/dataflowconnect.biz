@@ -148,7 +148,7 @@
                             <a href="?page=home<?php echo($_REQUEST['lang']=='es') ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang'] != 'en' ? 'INICIO' : 'Home' ?> </a>
                         </li>
                         <li class="dropdown">
-                            <a href="" class="dropdown-toggle <?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?> "class="<?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?>" data-toggle="dropdown"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'NUESTRA PROPUESTA' : 'OUR PROPOSAL' ?></a>
+                            <a class="dropdown-toggle <?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?> "class="<?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?>" data-toggle="dropdown"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'NUESTRA PROPUESTA' : 'OUR PROPOSAL' ?></a>
                             <ul class="dropdown-menu">
                                 <?php foreach ($services as $service): ?>
                                     <li><a href="?page=our-proposal&service=<?= $service['link']?><?php echo($_REQUEST['lang']=='es') ?'&lang=es' :'&lang=en'?>" class=""><?= $service['title']?></a></li>

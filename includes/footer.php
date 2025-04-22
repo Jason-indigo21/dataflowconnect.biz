@@ -5,7 +5,7 @@
         </div>
         <div class="item-box">
             <div class="item">
-                <div class="container">
+                <div class="container ">
                     <div class="row align-center">
 
                         <div class="col-lg-6 text-light">
@@ -24,7 +24,7 @@
                                 <div class="heading">
                                     <h4> <?php echo $isLang ? "¡ÚNETE A NUESTRO EQUIPO!" : "JOIN OUR TEAM!" ?> </h4>
                                 </div>
-                                <form action="mail-join-up.php" method="POST" enctype="multipart/form-data" >
+                                <form action="mail-join-up.php" method="POST" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
@@ -40,7 +40,7 @@
                                             <label for="cv" class="custom-label"><?php echo $isLang ? "Subir archivo CV" : "Upload CV" ?> </label>
                                             <span class="file-name" id="fileName"><?php echo $isLang ? "Ningún archivo elegido" : "No file chosen" ?> </span>
                                             <div class="form-group">
-                                                <input type="file" id="cv"  name="cv" class="custom-file-input" >
+                                                <input type="file" id="cv" name="cv" class="custom-file-input">
 
                                             </div>
                                         </div>
@@ -55,7 +55,7 @@
                                                                     placeholder="Captcha" />
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-1 mt-3">
+                                                        <div class="col-md-1 mt-3 pr-3">
                                                             <div onclick="generate()">
                                                                 <i class="fas fa-sync"></i>
                                                             </div>
@@ -65,7 +65,6 @@
                                                                 <input type="text" class="form-control"
                                                                     style="text-decoration:line-through;text-align:center; font-style: italic; padding-top:30px;"
                                                                     id="captchandler" disabled>
-
                                                             </div>
                                                         </div>
                                                         <div class="col-md-8 px-4">
@@ -94,6 +93,19 @@
             </div>
         </div>
     </div>
+    <script>
+        const fileInput = document.getElementById('cv');
+        const fileNameDisplay = document.getElementById('fileName');
+
+        fileInput.addEventListener('change', function() {
+            if (fileInput.files.length > 0) {
+                fileNameDisplay.textContent = fileInput.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'No file chosen';
+            }
+        });
+    </script>
+
 <?php endif; ?>
 
 
@@ -106,13 +118,13 @@
     <!-- Fixed Shape -->
 
     <!-- End Footer Top -->
-    <div class="container">
+    <div class="container container-footer">
         <?php include("./includes/chat.php"); ?>
         <div class="f-items default-padding">
             <div class="row">
                 <div class="col-lg-4 col-md-6 item">
                     <div class="f-item about">
-                        <img src="assets/images/logo.png" alt="Logo">
+                        <img src="assets/images/logo.png" alt="Logo" class="w-75 d-flex mx-auto align-item-center">
                         <p class="text-justify">
                             <?php echo $isLang
                                 ? "En <b class='text-primary'>DATAFLOW CONNECT, S.A.,</b> no solo gestionamos llamadas, creamos conexiones. Somos una consultora especializada en soluciones estratégicas para Call Centers, diseñada para ayudar a empresas a mejorar su atención al cliente, optimizar sus operaciones y potenciar su crecimiento."
@@ -170,8 +182,8 @@
                             <ul>
                                 <li>
                                     <strong><?php echo $isLang ? "Dirección" : "Address" ?> :</strong>
-                                    PH Torres de las Americas
-                                    Floor 2, Tower A
+                                    PH Torres de las Americas<br>
+                                    Floor 2, Tower A <br>
                                     Punta Pacifica, San Francisco, Panama
 
                                 </li>
@@ -322,18 +334,6 @@ if ($_REQUEST['email-sent'] == 'success')
 <script src="assets/js/chat.js"></script>
 
 <script>
-    const fileInput = document.getElementById('cv');
-    const fileNameDisplay = document.getElementById('fileName');
-
-    fileInput.addEventListener('change', function() {
-        if (fileInput.files.length > 0) {
-            fileNameDisplay.textContent = fileInput.files[0].name;
-        } else {
-            fileNameDisplay.textContent = 'No file chosen';
-        }
-    });
-
-
     $(document).ready(function() {
         // $('#exampleModal').modal('show');
         let cookies = localStorage.getItem('cookies');
@@ -399,7 +399,7 @@ if ($_REQUEST['email-sent'] == 'success')
             generate();
         } else {
             let s = document.getElementById("key")
-            .innerHTML = '<p style="color: red; font-size: 16px;padding: 1px 10px;background: #fff;width: fit-content; border-radius: 5px;"><i class="fas fa-exclamation-circle"></i> INCORRECT CAPTCHA</p>';
+                .innerHTML = '<p style="color: red; font-size: 16px;padding: 1px 10px;background: #fff;width: fit-content; border-radius: 5px;"><i class="fas fa-exclamation-circle"></i> INCORRECT CAPTCHA</p>';
             generate();
         }
     }
