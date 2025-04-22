@@ -79,10 +79,10 @@ if ($result) {
   curl_exec($cSession);
   curl_close($cSession);
 
-  header("Location: ./?page=contact-us&email-sent=success");
+  header("Location: ./?page=contact-us&email-sent=success&lang=".$_REQUEST['lang']);
 
 } else {
-  header("Location: ./?page=contact-us&email-sent=failed");
+  header("Location: ./?page=contact-us&email-sent=failed&lang=".$_REQUEST['lang']);
   //   echo "Error: " . curl_error($cSession) . " ";
 }
 
