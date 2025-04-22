@@ -138,28 +138,28 @@
                         <h4 class="widget-title"><?php echo $isLang ? "Enlaces Rápidos" : "Quick Links" ?> </h4>
                         <ul>
                             <li class="">
-                                <a href="?page=home<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=" active"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang'] != 'en' ? 'Inicio' : 'Home' ?> </a>
+                                <a href="?page=home<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=" active"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang'] != 'en' ? 'Inicio' : 'Home' ?> </a>
                             </li>
                             <li class="">
-                                <a href="?page=solutions-by-sector<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Soluciones Por Sector' : 'SOLUTIONS BY SECTOR' ?></a>
+                                <a href="?page=solutions-by-sector<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Soluciones Por Sector' : 'SOLUTIONS BY SECTOR' ?></a>
                             </li>
                             <li class="">
-                                <a href="?page=digital-infrastructure<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Infraestructura Digital' : 'DIGITAL INFRASTRUCTURE' ?></a>
+                                <a href="?page=digital-infrastructure<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Infraestructura Digital' : 'DIGITAL INFRASTRUCTURE' ?></a>
                             </li>
                             <li class="">
-                                <a href="?page=discover-more<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Descubra Mas' : 'DISCOVER MORE' ?></a>
+                                <a href="?page=discover-more<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Descubra Mas' : 'DISCOVER MORE' ?></a>
                             </li>
                             <li class="">
-                                <a href="?page=frequesntly-asked-question<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Preguntas Frecuentes' : 'FREQUENTLY ASKED QUESTIONS' ?></a>
+                                <a href="?page=frequesntly-asked-question<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>" class=""><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Preguntas Frecuentes' : 'FREQUENTLY ASKED QUESTIONS' ?></a>
                             </li>
                             <li>
-                                <a href="?page=contact-us<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Contactenos' : 'CONTACT US' ?></a>
+                                <a href="?page=contact-us<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Contactenos' : 'CONTACT US' ?></a>
                             </li>
                             <li>
-                                <a href="?page=privacy-policy<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Politica De Privacidad' : 'Privacy Policy' ?></a>
+                                <a href="?page=privacy-policy<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Politica De Privacidad' : 'Privacy Policy' ?></a>
                             </li>
                             <li>
-                                <a href="?page=cookie-privacy<?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Privacidad de los cookies' : 'Cookie Privacy' ?></a>
+                                <a href="?page=cookie-privacy<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'Privacidad de los cookies' : 'Cookie Privacy' ?></a>
                             </li>
                         </ul>
                     </div>
@@ -169,7 +169,7 @@
                         <h4 class="widget-title"><?php echo $isLang ? "Nuestra Propuesta" : "Our Proposal" ?></h4>
                         <ul>
                             <?php foreach ($services as $service): ?>
-                                <li><a href="?page=our-proposal&service=<?= $service['link'] ?><?php echo ($_REQUEST['lang'] == 'es') ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?= $service['title'] ?></a></li>
+                                <li><a href="?page=our-proposal&service=<?= $service['link'] ?><?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"><?= $service['title'] ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
