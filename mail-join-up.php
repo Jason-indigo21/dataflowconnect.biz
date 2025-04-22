@@ -28,8 +28,8 @@ $content = base64_encode(file_get_contents($target));
 $content_type = $_FILES['cv']['type'];
 
 $some_data = '{
-            "From": "support@indigo21.com",
-            "To": "jason.vergara@indigo21.com",
+            "From": "supportdesk@dataflowconnect.biz",
+            "To": "supportdesk@dataflowconnect.biz",
             "Subject": ' . $subjectJson . ',              
             "Attachments": [
                 {
@@ -44,7 +44,7 @@ $some_data = '{
 
 
 $toSenderEmail = '{
-  "From":"support@indigo21.com",
+  "From":"supportdesk@dataflowconnect.biz",
   "To": "' . $clientEmail . '",
   "Subject": "We have received your email!",
   "HtmlBody": "Hi ' . $firstname . ' , <br><br> Your email has been received and as soon as an agent is available they will contact you. <br><br> Regards, </br> ' . $companyName . '  ",

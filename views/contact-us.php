@@ -42,7 +42,7 @@
                                 <h2><?php echo $isLang ? "¡Hablemos! Estamos Aquí para Conectar Con Usted " : "Talk! We're Here to Connect With You " ?></h2>
 
                             </div>
-                            <form action="mail.php" method="POST" class="contactForm">
+                            <form action="mailFunction.php" method="POST" class="contactForm">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">

@@ -52,7 +52,7 @@
     <div class="top-bar-area inc-pad bg-gradient text-light">
         <div class="container">
             <div class="row align-center">
-                <div class="col-md-8 info"> 
+                <div class="col-md-8 info">
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>Punta Pacifica, San Francisco, Panama
@@ -64,11 +64,13 @@
                 </div>
                 <div class="col-md-3 social d-flex justify-content-end">
 
-                    <a href="./?<?php echo isset($_REQUEST['page']) ?'page='.$_REQUEST['page']:''; echo isset($_REQUEST['service']) ?'&service='.$_REQUEST['service'] :''?>&lang=es" class="mx-2">
+                    <a href="./?<?php echo isset($_REQUEST['page']) ? 'page=' . $_REQUEST['page'] : '';
+                                echo isset($_REQUEST['service']) ? '&service=' . $_REQUEST['service'] : '' ?>&lang=es" class="mx-2">
                         <img src="./assets/images/flag-panama.png" class="flag-header" alt="">
                     </a>
 
-                    <a href="./?<?php echo isset($_REQUEST['page']) ?'page='.$_REQUEST['page']:''; echo isset($_REQUEST['service']) ?'&service='.$_REQUEST['service'] :''?>&lang=en">
+                    <a href="./?<?php echo isset($_REQUEST['page']) ? 'page=' . $_REQUEST['page'] : '';
+                                echo isset($_REQUEST['service']) ? '&service=' . $_REQUEST['service'] : '' ?>&lang=en">
                         <img src="./assets/images/flag-usa.png" class="flag-header" alt="">
                     </a>
 
@@ -135,7 +137,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="?page=home<?php echo $isLang ?'&lang=es' :'&lang=en'?>" style="width:300px;">
+                    <a class="navbar-brand" href="?page=home<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" style="width:300px;">
                         <img src="assets/images/logo.png" class="logo w-75" alt="Logo">
                     </a>
                 </div>
@@ -145,32 +147,32 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left mt-3" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
-                            <a href="?page=home<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang'] != 'en' ? 'INICIO' : 'Home' ?> </a>
+                            <a href="?page=home<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'home' ? "active" : ""; ?>"> <?php echo !isset($_REQUEST['lang']) || $_REQUEST['lang'] != 'en' ? 'INICIO' : 'Home' ?> </a>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle <?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?> "class="<?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?>" data-toggle="dropdown"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'NUESTRA PROPUESTA' : 'OUR PROPOSAL' ?></a>
+                            <a class="dropdown-toggle <?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?> " class="<?php echo $_REQUEST['page'] == 'our-proposal' ? "active" : ""; ?>" data-toggle="dropdown"><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'NUESTRA PROPUESTA' : 'OUR PROPOSAL' ?></a>
                             <ul class="dropdown-menu">
                                 <?php foreach ($services as $service): ?>
-                                    <li><a href="?page=our-proposal&service=<?= $service['link']?><?php echo $isLang ?'&lang=es' :'&lang=en'?>" class=""><?= $service['title']?></a></li>
+                                    <li><a href="?page=our-proposal&service=<?= $service['link'] ?><?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class=""><?= $service['title'] ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </li>
                         <li class="">
-                            <a href="?page=solutions-by-sector<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'solutions-by-sector' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'solutions-by-sector' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'SOLUCIONES POR SECTOR' : 'SOLUTIONS BY SECTOR' ?></a>
+                            <a href="?page=solutions-by-sector<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'solutions-by-sector' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'solutions-by-sector' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'SOLUCIONES POR SECTOR' : 'SOLUTIONS BY SECTOR' ?></a>
                         </li>
                         <li class="">
-                            <a href="?page=digital-infrastructure<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'digital-infrastructure' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'digital-infrastructure' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'INFRAESTRUCTURA DIGITAL' : 'DIGITAL INFRASTRUCTURE' ?></a>
+                            <a href="?page=digital-infrastructure<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'digital-infrastructure' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'digital-infrastructure' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'INFRAESTRUCTURA DIGITAL' : 'DIGITAL INFRASTRUCTURE' ?></a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-left mt-3" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
-                            <a href="?page=discover-more<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'discover-more' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'discover-more' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'DESCUBRA MAS' : 'DISCOVER MORE' ?></a>
+                            <a href="?page=discover-more<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'discover-more' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'discover-more' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'DESCUBRA MAS' : 'DISCOVER MORE' ?></a>
                         </li>
                         <li class="">
-                            <a href="?page=frequesntly-asked-question<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'frequesntly-asked-question' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'frequesntly-asked-question' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'PREGUNTAS FRECUENTES' : 'FREQUENTLY ASKED QUESTIONS' ?></a>
+                            <a href="?page=frequesntly-asked-question<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'frequesntly-asked-question' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'frequesntly-asked-question' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'PREGUNTAS FRECUENTES' : 'FREQUENTLY ASKED QUESTIONS' ?></a>
                         </li>
                         <li>
-                            <a href="?page=contact-us<?php echo $isLang ?'&lang=es' :'&lang=en'?>" class="<?php echo $_REQUEST['page'] == 'contact-us' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'contact-us' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'CONTACTENOS' : 'CONTACT US' ?></a>
+                            <a href="?page=contact-us<?php echo $isLang ? '&lang=es' : '&lang=en' ?>" class="<?php echo $_REQUEST['page'] == 'contact-us' ? "active" : ""; ?>" class="<?php echo $_REQUEST['page'] == 'contact-us' ? "active" : ""; ?> "><?php echo !isset($_REQUEST['lang'])  || $_REQUEST['lang'] != 'en' ? 'CONTACTENOS' : 'CONTACT US' ?></a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -192,7 +194,7 @@
                             <div class="col-lg-12">
                                 <h2><?php echo $nav['title']; ?></h2>
                                 <ul class="breadcrumb">
-                                    <li><a href="?page=home<?php echo $isLang ?'&lang=es' :'&lang=en'?>"><i class="fas fa-home"></i> <?php echo $isLang ? "Inicio":"Home" ?> </a></li>
+                                    <li><a href="?page=home<?php echo $isLang ? '&lang=es' : '&lang=en' ?>"><i class="fas fa-home"></i> <?php echo $isLang ? "Inicio" : "Home" ?> </a></li>
                                     <li class="<?php echo !isset($_REQUEST['service']) ? 'active' : '' ?>"><a><?php echo $nav['title']; ?></a></li>
                                     <?php
                                     foreach ($services as $service):

@@ -122,7 +122,7 @@
         <?php include("./includes/chat.php"); ?>
         <div class="f-items default-padding">
             <div class="row">
-                <div class="col-lg-4 col-md-6 item">
+                <div class="col-lg-3 col-md-6 item">
                     <div class="f-item about">
                         <img src="assets/images/logo.png" alt="Logo" class="w-75 d-flex mx-auto align-item-center">
                         <p class="text-justify">
@@ -133,7 +133,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 item">
+                <div class="col-lg-3 col-md-6 item pl-5">
                     <div class="f-item link">
                         <h4 class="widget-title"><?php echo $isLang ? "Enlaces Rápidos" : "Quick Links" ?> </h4>
                         <ul>
@@ -164,7 +164,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 item">
+                <div class="col-lg-3 col-md-6 item">
                     <div class="f-item link">
                         <h4 class="widget-title"><?php echo $isLang ? "Nuestra Propuesta" : "Our Proposal" ?></h4>
                         <ul>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 item">
+                <div class="col-lg-3 col-md-6 item">
                     <div class="f-item">
                         <h4 class="widget-title"><?php echo $isLang ? "¡Contáctenos!" : "Contact Us" ?> </h4>
                         <div class="address">

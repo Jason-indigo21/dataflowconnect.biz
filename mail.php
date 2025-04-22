@@ -7,7 +7,7 @@ $message = $_POST['message'];
 $captcha = $_POST['captcha'];
 
 
-$subject = 'Inquiry  - ' . $name . ' ' . $surname . ' - ' . $email;
+$subject = 'Inquiry  - ' . $name . ' - ' . $email;
 
 $formContent = "<b>Name: </b>" . $name .
   "<br><b>Email: </b>" . $email .
@@ -19,7 +19,7 @@ $subjectJson = json_encode($subject);
 
 $some_data = '{
   "From":"supportdesk@dataflowconnect.biz",
-  "To": "christine.carillo@indigo21.com",
+  "To": "supportdesk@dataflowconnect.biz",
   "Subject": ' . $subjectJson . ',
   "HtmlBody": ' . $data . ',
   "MessageStream": "outbound"
@@ -30,7 +30,7 @@ $toSenderEmail = '{
   "From":"supportdesk@dataflowconnect.biz",
   "To": '. $email .',
   "Subject": "We have received your email!",
-  "HtmlBody": "Hi ' . $name . ' , <br><br> Your email has been received and as soon as an agent is available they will contact you. <br><br> Regards, </br> Axento Digital Solutions ",
+  "HtmlBody": "Hi ' . $name . ' , <br><br> Your email has been received and as soon as an agent is available they will contact you. <br><br> Regards, </br> Dataflow Connect, S.A. ",
   "MessageStream": "outbound"
 }';
 
@@ -54,6 +54,7 @@ curl_close($cSession);
 
 if ($result) {
   // echo $result;
+  curl_init();
   curl_setopt($cSession, CURLOPT_URL, "https://api.postmarkapp.com/email");
   curl_setopt($cSession, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($cSession, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json', 'X-Postmark-Server-Token:0eff8107-c3f8-47d9-bf00-ea7299b60151'));

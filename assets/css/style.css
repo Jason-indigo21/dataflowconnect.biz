@@ -7134,7 +7134,7 @@ footer.bg-dark p {
 }
 
 footer .f-item.link li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 footer .f-item.link li a {
@@ -8655,7 +8655,7 @@ margin-top: 50px;
 
 @media (min-width: 1200px) {
   .container-footer{
-    max-width: 1440px;
+    max-width: 1540px;
   }
 }
 
